@@ -73,8 +73,8 @@ class EggSearchPlugin(Star):
 
     async def initialize(self):
         """插件初始化，加载数据"""
-        # 获取插件目录下的 data/egg_data.xlsx
-        self.data_path = str(Path(__file__).parent / "data" / "egg_data.xlsx")
+        # 获取插件目录下的 egg_data.xlsx
+        self.data_path = str(Path(__file__).parent / "egg_data.xlsx")
         self.egg_data = load_egg_data(self.data_path)
         logger.info(f"查蛋器插件初始化完成，数据路径: {self.data_path}")
 
