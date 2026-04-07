@@ -80,6 +80,7 @@ AstrBot 插件，根据精灵蛋的尺寸和重量匹配精灵种类。
 - 插件初始化时加载 CSV 数据到内存
 - 使用 Python 标准 `csv` 模块解析
 - 数值比较使用 `float` 类型
+- 如需额外依赖库，必须通过 `requirements.txt` 管理
 
 ## 文件结构
 
@@ -88,6 +89,7 @@ astrbot_plugin_eggSearch/
 ├── main.py           # 插件主逻辑
 ├── data/             # 数据目录
 │   └── egg_data.csv  # 精灵蛋数据
+├── requirements.txt  # 依赖管理（如有额外库）
 ├── metadata.yaml     # 插件元数据
 └── CLAUDE.md         # 项目说明
 ```
