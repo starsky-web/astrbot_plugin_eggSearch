@@ -64,7 +64,7 @@ def load_egg_data(xlsx_path: str) -> List[EggData]:
     return egg_list
 
 
-@register("eggSearch", "WJF", "洛克王国世界查蛋器", "1.1.1")
+@register("eggSearch", "WJF", "洛克王国世界查蛋器", "0.1.0")
 class EggSearchPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
